@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./javaScript/script.js" defer></script>
+    <title>Cine Oficina/Filmes</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body id="ingressos">    
+    <header class="cabecalho">
+        <img src="./img/Cine Oficina Preto.png" width=200 lenght="200" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ingressos.html">Filmes</a></li>
+                <li><a href="oficinas.html">Oficinas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        <nav id="on">
+            <ul>
+                <li><a href="./perfil.html">Perfil</a></li>
+                <li><a href="javascript:void(0);" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+        <nav id="off">
+            <ul>
+                <li><a href="./cadastro.html">Cadastre-se</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="ingressos-corpo">
+        <section id="ingressos-cartaz">
+            <h1>Filmes em Cartaz</h1>
+            <div class="ingressos-bloco">
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_o-protetor.png" alt="O Protetor">
+                    <div class="ingressos-bloco-card-container">
+                        <h4>O PROTETOR</h4>
+                        <span class="ingressos-card-container-span-black"><b>18</b></span>
+                        <a href="#ingressos-agendamento">
+                            <button class="btn-agendar" id="ingressos-cartaz-oProtetor">Agendar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_jogos-mortais.jpg" alt="Jogos Mortais">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>JOGOS MORTAIS X</b></h4>
+                        <span class="ingressos-card-container-span-black"><b>18</b></span>
+                        <a href="#ingressos-agendamento">
+                            <button class="btn-agendar " id="ingressos-cartaz-jogosMortais">Agendar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_nosso-sonho.jpg" alt="Nosso Sonho">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>NOSSO SONHO</b></h4>
+                        <span class="ingressos-card-container-span-amarelo"><b>12</b></span>
+                        <a href="#ingressos-agendamento">
+                            <button class="btn-agendar" id="ingressos-cartaz-nossoSonho">Agendar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_barbie.jpg" alt="Barbie">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>BARBIE</b></h4>
+                        <span class="ingressos-card-container-span-amarelo"><b>12</b></span>
+                        <a href="#ingressos-agendamento">
+                            <button class="btn-agendar" id="ingressos-cartaz-barbie">Agendar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_besouro-azul.jpg" alt="Besouro Azul">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>BESOURO AZUL</b></h4>
+                        <span class="ingressos-card-container-span-laranja"><b>14</b></span>
+                        <a href="#ingressos-agendamento">
+                            <button class="btn-agendar" id="ingressos-cartaz-besouroAzul">Agendar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_som-da-liberdade.png" alt="Som da Liberdade">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>SOM DA LIBERDADE</b></h4>
+                        <span class="ingressos-card-container-span-laranja"><b>14</b></span>
+                        <a href="#ingressos-agendamento">
+                            <button class="btn-agendar" id="ingressos-cartaz-somDaLiberdade">Agendar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ingressos-breve">
+            <h1>Filmes em Breve</h1>
+            <div class="ingressos-bloco">
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_as-marvels.jpg" alt="As Marvels">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>As Marvels</b></h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_blackberry.png" alt="Black Berry">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>Black Berry</b></h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/jogos-vorazes-a-cantiga-dos-passaros-e-das-serpentes.jpg" alt="Jogos Vorazes">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>Jogos vorazes a cantiga<br> dos passaros e das serpentes</b></h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_meu-nome-e-gal.jpg" alt="Meu nome é Gal">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>Meu nome é Gal</b></h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_mussum-o-filmis.jpg" alt="Mussum">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>Mussum o filmis</b></h4>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ingressos-bloco-card">
+                    <img src="img/filmes_trolls-juntos-novamente.jpg" alt="Trolls juntos novamente">
+                    <div class="ingressos-bloco-card-container">
+                        <h4><b>Trolls Juntos Novamente</b></h4>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ingressos-agendamento">
+
+            <h1>Agendamento e Sinopse</h1>
+            
+            <div class="ingressos-agendamento-bloco" id="filmeOprotetor">
+                
+                <div class="ingressos-agendamento-bloco-filmes">
+                    <img src="img/filmes_o-protetor.png" alt="O Protetor">
+                    <p><br>O PROTETOR: CAPÍTULO FINAL<br>
+                        <br>Desde que desistiu de sua vida como assassino trabalhando para o governo,
+                        Robert McCall (Denzel Washington) tem dificuldades para se reconciliar com as coisas horríveis que fez em seu passado,
+                        e encontra um estranho conforto em trazer à justiça aos oprimidos. Após encontrar um lar inesperado no sul da Itália,
+                        ele descobre que seus novos amigos vivem sob o controle dos chefes do crime organizado do local. 
+                        Assim que os eventos se desdobram para acontecimentos mortais, McCall sabe o que precisa fazer: 
+                        se tornar um protetor para seus amigos e enfrentar a máfia.</p>
+                </div>
+
+                <div id="ingressos-agendamento-bloco-agenda">
+                    <div class="ingressos-Agenda-tab">
+                        <button class="tab-dia" onclick="dia(event, 'SEG0')">13/11<br> SEG</button>
+                        <button class="tab-dia" onclick="dia(event, 'TER0')">14/11<br> TER</button>
+                        <button class="tab-dia" onclick="dia(event, 'QUA0')">15/11<br> QUA</button>
+                        <button class="tab-dia" onclick="dia(event, 'QUI0')">16/11<br> QUI</button>
+                        <button class="tab-dia" onclick="dia(event, 'SEX0')">17/11<br> SEX</button>
+                        <button class="tab-dia" onclick="dia(event, 'SAB0')">18/11<br> SAB</button>
+                        <button class="tab-dia" onclick="dia(event, 'DOM0')">19/11<br> DOM</button>
+                    </div>
+                    <form id="SEG0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="1" name="horario0SEG" value="O PROTETOR: CAPÍTULO FINAL SEG 13:30 13/11 Sala 05">
+                        <label for="1">13:30</label>
+                        <input type="radio" id="2" name="horario0SEG" value="O PROTETOR: CAPÍTULO FINAL SEG 16:50 13/11 Sala 05">
+                        <label for="2">16:50</label>
+                        <input type="radio" id="3" name="horario0SEG" value="O PROTETOR: CAPÍTULO FINAL SEG 20:10 13/11 Sala 05">
+                        <label for="3">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                    <form id="TER0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="4" name="horario0TER" value="O PROTETOR: CAPÍTULO FINAL TER 13:30 14/11 Sala 05">
+                        <label for="4">13:30</label>
+                        <input type="radio" id="5" name="horario0TER" value="O PROTETOR: CAPÍTULO FINAL TER 16:50 14/11 Sala 05">
+                        <label for="5">16:50</label>
+                        <input type="radio" id="6" name="horario0TER" value="O PROTETOR: CAPÍTULO FINAL TER 20:10 14/11 Sala 05">
+                        <label for="6">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                    <form id="QUA0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="7" name="horario0QUA" value="O PROTETOR: CAPÍTULO FINAL QUA 13:30 15/11 Sala 05">
+                        <label for="7">13:30</label>
+                        <input type="radio" id="8" name="horario0QUA" value="O PROTETOR: CAPÍTULO FINAL QUA 16:50 15/11 Sala 05">
+                        <label for="8">16:50</label>
+                        <input type="radio" id="9" name="horario0QUA" value="O PROTETOR: CAPÍTULO FINAL QUA 20:10 15/11 Sala 05">
+                        <label for="9">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                    <form id="QUI0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="10" name="horario0QUI" value="O PROTETOR: CAPÍTULO FINAL QUI 13:30 16/11 Sala 05">
+                        <label for="10">13:30</label>
+                        <input type="radio" id="11" name="horario0QUI" value="O PROTETOR: CAPÍTULO FINAL QUI 16:50 16/11 Sala 05">
+                        <label for="11">16:50</label>
+                        <input type="radio" id="12" name="horario0QUI" value="O PROTETOR: CAPÍTULO FINAL QUI 20:10 16/11 Sala 05">
+                        <label for="12">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                    <form id="SEX0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="13" name="horario0SEX" value="O PROTETOR: CAPÍTULO FINAL SEX 13:30 17/11 Sala 05">
+                        <label for="19">13:30</label>
+                        <input type="radio" id="14" name="horario0SEX" value="O PROTETOR: CAPÍTULO FINAL SEX 16:50 17/11 Sala 05">
+                        <label for="14">16:50</label>
+                        <input type="radio" id="15" name="horario0SEX" value="O PROTETOR: CAPÍTULO FINAL SEX 20:10 17/11 Sala 05">
+                        <label for="15">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                    <form id="SAB0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="16" name="horario0SAB" value="O PROTETOR: CAPÍTULO FINAL SAB 13:30 18/11 Sala 05">
+                        <label for="16">13:30</label>
+                        <input type="radio" id="17" name="horario0SAB" value="O PROTETOR: CAPÍTULO FINAL SAB 16:50 18/11 Sala 05">
+                        <label for="17">16:50</label>
+                        <input type="radio" id="18" name="horario0SAB" value="O PROTETOR: CAPÍTULO FINAL SAB 20:10 18/11 Sala 05">
+                        <label for="18">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                    <form id="DOM0" class="ingressos-Agenda-tabconteudo" action="">
+                        <span>Sala 05</span>
+                        <input type="radio" id="19" name="horario0DOM" value="O PROTETOR: CAPÍTULO FINAL DOM 13:30 19/11 Sala 05">
+                        <label for="19">13:30</label>
+                        <input type="radio" id="20" name="horario0DOM" value="O PROTETOR: CAPÍTULO FINAL DOM 16:50 19/11 Sala 05">
+                        <label for="20">16:50</label>
+                        <input type="radio" id="21" name="horario0DOM" value="O PROTETOR: CAPÍTULO FINAL DOM 20:10 19/11 Sala 05">
+                        <label for="21">20:10</label><br>
+                        <input type="submit" value="Agendar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Av. Paulista, 0000<br>
+            Bela Vista, São Paulo - SP, 01311-300<br>
+            Tel: 9999 - 9999
+        </address>
+        <p>&copy; 2023 - Cine Oficina</p>
+    </footer>
+    
+</body>
+</html>

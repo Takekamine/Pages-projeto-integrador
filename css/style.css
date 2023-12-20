@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  ----------------------------------------  Header ---------------------------------------- */
+.cabecalho {
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho ul li {
+    list-style-type: none;
+    padding: 16px;
+}
+
+.cabecalho ul li:hover {
+    background-color: #DA0037;
+}
+
+.cabecalho ul li a {
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+.cabecalho ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho ol li {
+    list-style-type: none;
+    padding: 16px;
+}
+
+.cabecalho ol li a {
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+
+
+/* ---------------------------------------- Main ---------------------------------------- */
+/*Pagina Index*/
+.index-corpo {
+    display: flex;
+    flex-direction: column;
+    background-color: #171717;
+}
+
+.index-corpo h1 {
+    display: flex;
+    justify-content: center;
+    color: #DA0037;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+#index-filmes a{
+    color: #171717;
+}
+
+.carousel-inner{
+    display: flex;
+    text-align: center;
+}
+
+.carousel-item{
+    display: flex;
+}
+
+.carousel-item img{
+
+}
+
+/*Pagina Ingressos*/
+.ingressos-corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color: #171717;
+}
+
+.ingressos-corpo section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: #171717;
+    color: #DA0037;
+}
+
+#ingressos-cartaz{
+    display: flex;
+
+}
+
+#ingressos-breve{
+    display: flex;
+
+}
+
+.ingressos-corpo section h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ingressos-bloco{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ingressos-bloco-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding-bottom: 25px;
+}
+
+.ingressos-bloco-card img{
+    max-height: 265px;
+    max-width: 180px;
+}
+
+.ingressos-bloco-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.90em;
+    color: #EDEDED;
+    margin-top: 10px;
+}
+
+.ingressos-bloco-card-container h4{
+    font-size: 1rem;
+}
+
+.ingressos-card-container-span-black {
+    background-color: black;
+    padding: 4px;
+}
+
+.ingressos-card-container-span-laranja {
+    background-color: orange;
+    padding: 4px;
+}
+.ingressos-card-container-span-amarelo {
+    background-color: rgba(255, 255, 0, 0.836);
+    padding: 4px;
+}
+
+.ingressos-bloco-card-container button {
+    background-color: #EDEDED;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#ingressos-agendamento{
+    display: flex;
+    justify-content: center;
+
+}
+
+.ingressos-agendamento-bloco{
+    display: flex;
+    justify-content: space-between;
+}
+
+#filmeOprotetor {
+    display: flex;
+}
+
+.ingressos-agendamento-bloco-filmes{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 20px;
+}
+
+
+.ingressos-agendamento-bloco-filmes img{
+    max-height: 265px;
+    max-width: 180px;
+}
+
+.ingressos-agendamento-bloco-filmes p{
+    text-align: justify;
+    color:#EDEDED;
+    font-size: 0.90em;
+}
+
+.ingressos-agendamento-bloco-agenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    max-height: 50%;
+    padding: 10px;
+}
+
+.ingressos-agendamento{
+    display: flex;
+    justify-content: center;
+
+}
+
+#ingressos-agendamento-bloco{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ingressos-agendamento-bloco-filmes{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 20px;
+}
+
+#ingressos-agendamento-bloco-filmes img{
+    max-height: 265px;
+    max-width: 180px;
+}
+
+#ingressos-agendamento-bloco-filmes p{
+    text-align: justify;
+    color:#EDEDED;
+    font-size: 0.90em;
+}
+
+#ingressos-agendamento-bloco-agenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    max-height: 50%;
+    padding: 10px;
+}
+
+.ingressos-Agenda-tab{
+    padding: 10px;
+}
+
+.ingressos-Agenda-tab button{
+    background-color: #EDEDED;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10%;
+}
+
+.ingressos-Agenda-tab button:hover{
+    background-color: #DA0037;
+}
+
+.ingressos-Agenda-tabconteudo{
+    padding: 10px 0px 0px 11px;
+    color: #EDEDED;
+}
+
+.ingressos-Agenda-tabconteudo label{
+    border: solid;
+    border-color: #DA0037;
+    padding: 5px;
+}
+
+.ingressos-Agenda-tabconteudo input[type="submit"]{
+    border-radius: 10px;
+    padding: 3px;
+}
+
+/*Pagina Oficinas*/
+.oficinas-corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color:#171717;
+}
+
+.oficinas-corpo h1{
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #DA0037;
+}
+
+.oficinas-corpo section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+    background-color: #171717;
+    color: #EDEDED;
+    align-items: center;
+}
+
+.oficinas-bloco-card{ 
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.oficinas-bloco-card h4{
+    font-size: 1rem;
+}
+
+.oficinas-bloco-card-texto{
+    margin-left: 10px;
+    text-align: justify;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.btn-agendar-oficinas{
+    width: 30%;
+    border: #000000;
+    color: #171717;
+    background-color: #EDEDED;
+}
+
+.cabecalho-botao{
+    color: #171717;
+    background-color:  white;
+}
+
+/*Pagina cadastro*/
+
+#cadastro-corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color: #171717;
+}
+
+#cadastro-corpo h2{
+    color: #DA0037;
+    margin-top: 10px;
+}
+
+#cadastro-corpo section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: #171717;
+    color:  #EDEDED;
+    align-items: center;
+}
+
+#cadastro-corpo section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #cadastro-corpo section label {
+    margin-bottom: .2rem;
+    position: relative;
+  }
+  
+  #cadastro-corpo section input {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+  }
+  
+  .btn-cadastro {
+    width: 100px;
+    height: 40px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-self: center;
+    border: #000000;
+    color: #171717;
+    background-color:  #EDEDED;
+    border-radius: 10px;
+}
+    #cadastro-corpo section form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #171717;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+  #cadastro-corpo section label:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+
+  .span-required{
+    display: none;
+    color: #e63636;
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+  }
+  
+/* ---------------------------------------- sobre ---------------------------------------- */
+
+ .sobre-corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color: #171717;
+}
+
+.sobre-corpo h2{
+    margin-top: 10px;
+    color: #DA0037;
+}
+
+.sobre-corpo section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+    background-color: #171717;
+    color: #EDEDED;
+    align-items: center;
+}
+
+.sobre-corpo section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+.sobre-corpo section form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #171717;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+  .sobre-card{ 
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-card-texto{
+    margin-left: 10px;
+    text-align: justify;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+  .sobre-corpo section label:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+
+/* ---------------------------------------- login ---------------------------------------- */
+
+
+#login-corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color:#171717;
+}
+
+#login-corpo h2{
+    margin-top: 10px;
+}
+
+#login-corpo section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: #171717;
+    color:  #EDEDED;
+    align-items: center;
+}
+
+#login-corpo section h2 {
+    color: #DA0037;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+#login-corpo section label {
+    margin-bottom: .2rem;
+    position: relative;
+  }
+  
+#login-corpo section input {
+    padding: .2rem .5rem;
+    border-radius: 10px;
+  }
+  
+.btn-login {
+    width: 100px;
+    height: 40px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-self: center;
+    border: #000000;
+    color: #171717;
+    background-color:  #EDEDED;
+    border-radius: 10px;
+}
+#login-corpo section form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #171717;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+  #login-corpo section label:not(:first-of-type) {
+    margin-top: 1rem;
+  }
+
+
+/* ---------------------------------------- Perfil ---------------------------------------- */
+
+#perfil-corpo {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color: #171717;
+    color: #EDEDED;
+}
+
+#perfil-corpo h2{
+    color: #DA0037;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.perfil-informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil-informacoes span {
+    padding-top: 20px;
+}
+
+.perfil-agendamentos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+  
+
+/* ---------------------------------------- footer ---------------------------------------- */
+footer {
+    display: flex;
+    padding: 30px 15px;
+    background-color: #444444;
+    color: #171717;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+footer address {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+Cores da paleta:
+#171717 preto
+#444444 cinza
+#EDEDED branco
+*/
